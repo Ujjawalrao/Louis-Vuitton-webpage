@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louis Vuitton</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://i.pinimg.com/originals/a9/f6/1d/a9f61d16033ddebbf27b53d1304108b4.png">
+  <!-- font awesome CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- TAILWIND CSS. CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="nav-cantainer cnt ">
+    <div class="inner-nav">
+      <div class="nav-left cnt">
+        <a href="#" class="cnt">
+          <img src="https://media2.giphy.com/media/3NxfYtkGvPFXFgPGLw/source.gif" alt="logo">
+          <span class="">Louis Vuitton</span>
+        </a>
+      </div>
+      <div class="nav-center">
+        <ul class="cnt">
+          <li class=""><a href="">Bags</a></li>
+          <li class=""><a href="">Jewellery</a></li>
+          <li class=""><a href="">GiftS</a></li>
+          <li class=""><a href="">Watch</a></li>
+          <li class=""><a href="">News</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <button class="sign-in">sign-in</button>
+        <button class="purchase"><i class="fa-solid fa-bag-shopping"></i>&nbsp<span>purchase</span></button>
+      </div>
+      <div class="nav-end">
+        <div>
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- form -->
+  <div class="formm">
+    <div class="wrapper">
+      <form>
+        <div class="text-white fixed right-5 top-2 cursor-pointer x">x</div>
+        <h2 class="m-6 font-semibold tracking-widest">Louis Vuitton</h2>
+        <div class="input-field">
+          <input type="text" required>
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required>
+          <label>Enter your password</label>
+        </div>
+        <div class="forget">
+          <label for="remember">
+            <input type="checkbox" id="remember">
+            <p>Remember me</p>
+          </label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button class="text-white border border-gray-400" type="submit">Log In</button>
+        <div class="register">
+          <p>Don't have an account? <a href="">Register</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<!-- Side nav  -->
+<nav class="side-nav bg-black w-full h-screen z-20 fixed top-0 right-0 pt-[6vh] px-[6vw] md:px-[7vw]">
+    <ul class="cnt text-2xl flex-col font-mono text-white tracking-wider">
+    <li class=""><a href="">Bags</a></li>
+    <li class=""><a href="">Jewellery</a></li>
+    <li class=""><a href="">Gifts</a></li>
+    <li class=""><a href="">Watch</a></li>
+    <li class=""><a href="">News</a></li>
+  </ul>
+</nav>
+
+<!-- ------------------ -->
+
+  <main class="main">
+    <section class="hero cnt" id="hero">
+      <div class="inner-cnt center flex  items-end">
+        <!-- <div class="play">Play</div> -->
+        <div class="hero-btn gap-4 flex justify-center block lg:hidden">
+          <button class="sign-in">sign in</button>
+          <button class="purchase"><i class="fa-solid fa-bag-shopping"></i>&nbsp<span>purchase</span></button>
+      </div>
+      </div>
+    </section>
+
+    <section class="lv-slider overflow-hidden">
+      <h1 class="flex font-semibold">Louis<img
+          src="https://media2.giphy.com/media/3NxfYtkGvPFXFgPGLw/source.gif">Vuitton</h1>
+    </section>
+    <section class="headline cnt">
+
+      <h1 class="allura-regular text-xl  lg:text-4xl text-center">Explore a Selection of the Maison's Creations... </h1>
+
+    </section>
+    <section class="show-perfume cnt ">
+      <!-- <img src="" > -->
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/529fc0c0e4b088b079c3fb6d/1560443326341-I1UDFK86989MYGWALNDO/ke17ZwdGBToddI8pDm48kJVUBuonXcN8tIrpimRw84oUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc2oaEyd4rzD7GceB2XZPA-6lW8v30YJkHP0sHU35xwqxmPTL14xPtkcLB6U3A_pKE/_U8A0760-Pano.jpg"
+        class="scaleup ">
+      <!-- <img src="" > -->
+    </section>
+
+    <section class="show-bags">
+      <div class="bag-show-1"></div>
+      <div class="bag-show-2"></div>
+    </section>
+
+    <section class="show-bags-2 hidden">
+      <div class="bag-show-1"></div>
+      <div class="bag-show-2"></div>
+    </section>
+
+    <section class="info text-[#999999] body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+          <p class="leading-relaxed text-lg">lorem retro cloud bread echo park, helvetica stumptown taiyaki taxidermy  kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore brake  pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
+          <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+          <h2 class="text-white font-medium title-font tracking-wider text-sm">Louis Vuitton</h2>
+          <p class="text-[#999999]">Our Product Designer</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="show-bags-3">
+      <div class="bag-show-1"></div>
+      <div class="bag-show-2"></div>
+    </section>
+
+    <section class="text-[#999999] body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" 
+                  src="https://24cara.vn/wp-content/uploads/2020/12/376A9472-scaled.jpg">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-200 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+              <h2 class="text-slate-600 title-font text-lg font-medium">The Catalyzer</h2>
+              <p class="mt-1">$16.00</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://media-photos.depop.com/b1/26568624/1463806042_631c8020998b45b2beba184299afbecb/P0.jpg">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-200 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+              <h2 class="text-slate-600 title-font text-lg font-medium">Shooting Stars</h2>
+              <p class="mt-1">$21.15</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.88-yungplug.com/wp-content/uploads/2021/08/IMG_5542-840x834.jpg">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-200 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+              <h2 class="text-slate-600 title-font text-lg font-medium">Neptune</h2>
+              <p class="mt-1">$12.00</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://i.pinimg.com/736x/d8/94/a1/d894a10ce5ebf6f09e166fda04e626d1.jpg">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-200 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+              <h2 class="text-slate-600 title-font text-lg font-medium">The 400 Blows</h2>
+              <p class="mt-1">$18.40</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://di2ponv0v5otw.cloudfront.net/posts/2023/07/22/64bc9e71f8c5da0d64a48aa4/m_64bc9e71f8c5da0d64a48aa5.jpg">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-200 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+              <h2 class="text-slate-600 title-font text-lg font-medium">The Catalyzer</h2>
+              <p class="mt-1">$16.00</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://cdn.shopify.com/s/files/1/0009/1593/1193/files/IMG_3363_81011ad9-f257-488c-b46c-4fb4d02f5746_1400x.jpg?v=1695909201">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-200 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+              <h2 class="text-slate-600 title-font text-lg font-medium">Shooting Stars</h2>
+              <p class="mt-1">$21.15</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://down-ph.img.susercontent.com/file/adb606e149a19dced1596b7146083fd8">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-200 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+              <h2 class="text-slate-600 title-font text-lg font-medium">Neptune</h2>
+              <p class="mt-1">$12.00</p>
+            </div>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+            <a class="block relative h-48 rounded overflow-hidden">
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://th.bing.com/th/id/OIP.nKrePUT0khNTv1X9XyWp6wHaHa?rs=1&pid=ImgDetMain">
+            </a>
+            <div class="mt-4">
+              <h3 class="text-gray-200 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
+              <h2 class="text-slate-600 title-font text-lg font-medium">The 400 Blows</h2>
+              <p class="mt-1">$18.40</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-[#999999] body-font">
+      <div class="container px-5 py-15 lg:py-24 mx-auto flex items-center md:flex-row flex-col">
+        <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
+          <h2 class="text-xs text-indigo-00 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
+          <h1 class="md:text-3xl text-2xl font-medium title-font text-gray-400">Master Cleanse Reliac Heirloom</h1>
+        </div>
+        <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
+          <button class="bg-gray-500 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-400 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">
+              <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-800 mb-1">GET IT ON</span>
+              <span class="title-font font-medium">Google Play</span>
+            </span>
+          </button>
+          <button class="bg-gray-500 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-400 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
+              <path d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z"></path>
+              <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"></path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-800 mb-1">Download on the</span>
+              <span class="title-font font-medium">App Store</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="store">
+
+    </section>
+    
+
+  </main>
+  <!-- FOOTER -->
+  <footer class=" body-font">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <img src="https://media2.giphy.com/media/3NxfYtkGvPFXFgPGLw/source.gif" class="w-[60px]">
+          <span class="ml-3 text-xl">Louis Vuitton —</span>
+        </a>
+        <p class="mt-2 text-sm text-gray-500">Please refer to the product label for specific country of origin for each
+          product.</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-300">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 to 25 Louis Vuitton —
+          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+            target="_blank">@Ujjawal</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <!--  -->
+          </a>
+          <a class="ml-3 text-gray-500">
+            <!--  -->
+          </a>
+          <a class="ml-3 text-gray-500">
+            <!--  -->
+          </a>
+          <a class="ml-3 text-gray-500">
+            <!--  -->
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GSAP SCROLL TRIGGER CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,636 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+/* ----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+.kaushan-script-regular {
+    font-family: "Kaushan Script";
+    font-weight: 500;
+    font-style: normal;
+  }
+.allura-regular {
+    font-family: "Allura", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+:root{
+    --brand-t-color: #999999;
+    --brand-2-t-col: #f6f9fd;
+    --brand-3-t-col: #0c0c0c;
+    --brand-bg-col: #000000;
+    --brand-gray-col: #ebebec ;
+}
+.cnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html,body{
+    scroll-behavior: smooth;    
+}
+
+/* form */
+.formm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index:9;
+    position: fixed;
+    display: none;
+    background-image: url(https://i1.sndcdn.com/artworks-aA2EiSamHViEzhmt-AGRteQ-t500x500.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+  width: 400px;
+  border-radius: 1rem;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); 
+  z-index: 15;
+  position: absolute;
+  backdrop-filter: brightness(30%);
+  top: 20%;
+  left:35%;
+
+  
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.input-field {
+  position: relative;
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
+}
+.input-field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%, -5);
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.15s ease;
+}
+.input-field input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+}
+.input-field input:focus~label,
+.input-field input:valid~label {
+  font-size: 0.8rem;
+  top: 10px;
+  transform: translateY(-120%);
+}
+.forget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0 35px 0;
+  color: #fff;
+}
+#remember {
+  accent-color: #fff;
+}
+.forget label {
+  display: flex;
+  align-items: center;
+}
+.forget label p {
+  margin-left: 8px;
+}
+.wrapper a {
+  color: #efefef;
+  text-decoration: none;
+}
+.wrapper a:hover {
+  text-decoration: underline;
+}
+button {
+  background: var(--brand-bg-col);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+.register {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+/* -------- */
+body{
+    overflow-x: hidden;
+    background: var(--brand-bg-col);
+    /* cursor: none; */
+    width: 100%;
+}
+body::-webkit-scrollbar{
+    width: 0 !important;
+}
+
+/* start nav here */
+.nav-cantainer{
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    top: 1.8rem;
+    font-size: large;
+    z-index: 9;    
+}
+.inner-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    height: 8vh;  
+    padding: 5px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--brand-bg-col);
+}
+.nav-left{
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav-left a span{
+    color: var(--brand-2-t-col); 
+    transition: all .5s ease-in-out;  
+}
+.nav-left img{
+    width: 70px;
+}
+
+.nav-center{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-center ul{
+    gap: 2rem;
+}
+.nav-center li {
+    letter-spacing: 1px;
+    cursor: url(./cathand.png), auto ;
+    
+}
+.nav-center li a{
+    transition: all .2s ease-in-out ;
+    font-family: monospace;
+    color: var(--brand-t-color);
+}
+.nav-center li a:hover{
+    color: var(--brand-2-t-col);
+
+}
+
+.nav-right button{
+    padding: 13px 15px ;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 1.1px;
+    font-family: monospace;
+    border-radius: .5rem;   
+}
+button{
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+button:hover{
+    animation: rotate .6s ease-in-out ;
+}
+.nav-right .sign-in{
+    background-color: var(--brand-bg-col);
+    color: var(--brand-2-t-col);
+    border: .2px solid #272727;
+}
+.nav-right .sign-in:hover{
+    border: .2px solid var(--brand-t-color);
+}
+.nav-right .purchase{
+    background-color: var(--brand-2-t-col);
+    color: var(--brand-bg-col);
+    font-size: .9rem;
+}
+.nav-right .purchase:hover{
+    background-color: var(--brand-gray-col);  
+}
+
+.nav-end{
+    display: none;
+}
+
+.side-nav{
+    display: none;
+}
+
+/* navbar end */
+
+/* hero section */
+
+.hero{
+    min-height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-2-t-col);
+    padding-top: .7rem;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    padding-top: 7rem;
+}
+.hero .inner-cnt{
+    /* background-image: url(https://cdn.vectorstock.com/i/preview-1x/01/19/liquid-chromatic-holographic-texture-wrinkled-vector-38140119.jpg); */
+    background-image: url(https://storage.googleapis.com/buro-malaysia-storage/www.buro247.my/2024/03/095c6c8c-01b-full-width-lv-the-place-bangkok.jpg);
+    /* background-image: url(https://ny-media.nuyou.com.sg/2021/07/Webp.net-gifmaker-29.gif); */
+    background-color: var(--brand-gray-col);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 97vw;
+    height: 105vh;
+    border-radius: 2rem;  
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.hero-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-btn button{
+    padding: 8px 15px ;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 1.1px;
+    font-family: monospace;
+    border-radius: .5rem;   
+}
+button{
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+button:hover{
+    animation: rotate .6s ease-in-out ;
+}
+.hero-btn .sign-in{
+    background-color: var(--brand-bg-col);
+    color: var(--brand-2-t-col);
+    border: .2px solid #272727;
+}
+.hero-btn .sign-in:hover{
+    border: .2px solid var(--brand-t-color);
+}
+.hero-btn .purchase{
+    background-color: var(--brand-2-t-col);
+    color: var(--brand-bg-col);
+    font-size: .9rem;
+}
+.hero-btn .purchase:hover{
+    background-color: var(--brand-gray-col);  
+}
+
+/* .inner-cnt .play{
+    opacity: 0;
+    scale: 0;
+    padding: 3vh 1.3vw;
+    background: #6e6e6e;
+    font-weight: 600;
+    border-radius: 50%;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    z-index: 99;
+} */
+/* lv-slider sectiom  */
+.lv-slider{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    padding: 0rem 2.5rem;
+}
+.lv-slider h1{
+    font-size: 450px;
+    white-space: nowrap;
+}
+
+/* headline section */
+.headline{
+    color: var(--brand-2-t-col);
+    height: 30vh;
+    width: 100%;
+}
+.headline h1{
+    letter-spacing: 3px;
+    font-style: 5rem;
+}
+
+/* store */
+.store{
+    height: 120vh;
+    width: 100vw;
+    background-image: url(https://th.bing.com/th/id/R.5f91b583b84d94a5d26bffa79269285c?rik=EXVCIqEc4PdN%2fQ&riu=http%3a%2f%2fwww.crash.fr%2fwp-content%2fuploads%2f2016%2f08%2fLe-Bon-March%c3%a9-Rive-Gauche-Paris.jpg&ehk=cnJU0%2b2TrTlcDTlXz8PkiwHJXqSpB05AhpCMXQMjFIc%3d&risl=&pid=ImgRaw&r=0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* show-bags section */
+.show-bags{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.show-bags div{
+    background: #c2c1c1;
+    height: 500px;
+    width: 500px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.show-bags .bag-show-1{
+    background-image: url(https://th.bing.com/th/id/OIP.FZ_KAJMf0JlYnGKnmDV9oAAAAA?rs=1&pid=ImgDetMain);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.show-bags .bag-show-1:hover{
+    filter:grayscale();
+    cursor: pointer;
+}
+.show-bags .bag-show-2{
+    background-image: url(https://fraguru.com/mdimg/secundar/o.65474.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* show-bags-2 start from here  */
+.show-bags-2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.show-bags-2 div{
+    background: #c2c1c1;
+    height: 500px;
+    width: 500px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.show-bags-2 .bag-show-1{
+    background-image: url(https://tungluxury.com/wp-content/uploads/2023/02/giay-louis-vuitton-lv-trainer-54-damier-ebene-multi-like-auth-3.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.show-bags-2 .bag-show-2{
+    background-image: url(https://theluxurylifestylemagazine.com/wp-content/uploads/2023/02/gold-edition.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* show-bags-3 start from here  */
+.show-bags-3{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: aliceblue;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.show-bags-3 div{
+    background: #c2c1c1;
+    height: 500px;
+    width: 500px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.show-bags-3 .bag-show-1{
+    background-image: url(https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-signature-short-hooded-wrap-coat-ready-to-wear--FPCO38RO1630_PM1_Cropped%20worn%20view.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.show-bags-3 .bag-show-2{
+    background-image: url(https://www.lulux.ru/wp-content/uploads/2021/03/Louis-Vuitton-Women-Giant-Monogram-Jacquard-Wrap-Coat-in-Camel-Wool-Regular-Fit-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*  */
+.show-perfume{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.show-perfume img{
+    height: 60%;
+}
+
+/* ----------------------------------------------- */
+
+
+@media (width <= 768px) {
+
+/* start nav here */
+.nav-cantainer{
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    top: .4rem;
+    font-size:small;
+    z-index: 99;  
+}
+.inner-nav{
+    width: 88vw; 
+    height: 5vh;
+    padding: 2px 10px 2px 2px;
+}
+.nav-left{
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .5px;
+}
+.nav-left img{
+    width: 30px;
+}
+/* nav end  */
+.nav-end{
+    display: block;
+    color: var(--brand-2-t-col);
+}
+.nav-end div{
+    font-size: 1.2rem;
+}
+
+.nav-center{
+    display: none;
+}
+.nav-right {
+    display: none; 
+}
+
+.side-nav{
+    display: none;
+}
+
+.side-nav ul li{
+    width: 100%;
+    font-weight: 800;
+    padding: 10px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* navbar end */
+
+/*  */
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-2-t-col);
+    padding-top: 8rem;
+    padding: 4.8rem 1rem 1rem;
+}
+.hero .inner-cnt{
+    width: 97vw;
+    height: 90vh;
+    border-radius: 1.5rem;
+    background-image: url(https://66.media.tumblr.com/637dd75b9cce055b671ba7f0d4522923/tumblr_n09v8bR0021qffcrao1_500.gifv);
+    background-position: center;
+    /* filter: brightness(30%) ; */
+}
+    
+/* lv-slider sectiom  */
+
+.lv-slider{
+    display: none;
+}
+
+/* ----- */
+
+.headline{
+    height: 10vh;
+    transform: translateY(10vh);
+}
+
+.show-perfume{
+    /* display: none; */
+    margin: 0;
+    /* height: 60vh; */
+}
+
+/* --- */
+
+.show-bags{
+    height: 20%;
+    flex-direction: column;
+    gap: 4rem;
+    /* background-color: brown; */
+}
+.show-bags div{
+    height: 250px;
+    width: 250px;
+}
+.show-bags-2{
+    display: none;
+    height: 50%;
+    margin: 1rem 0px;
+    
+}
+.show-bags-2 div{
+    height: 250px;
+    width: 250px;
+}
+.show-bags-3{
+    /* display: none; */
+    height: 50%;
+    margin: 4rem 0px;
+    flex-direction: column;
+    gap: 4rem;
+}
+.show-bags-3 div{
+    height: 250px;
+    width: 250px;
+}
+
+/* ---------- */
+
+.store{
+    display: none;
+}
+
+
+
+}
+
+/* ----------------- */
