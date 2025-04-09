@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <!-- nav bar -->
   <nav class="nav-cantainer cnt ">
     <div class="inner-nav">
       <div class="nav-left cnt">
@@ -80,8 +81,8 @@
 
 <!-- Side nav  -->
 <nav class="side-nav bg-black w-full h-screen z-20 fixed top-0 right-0 pt-[6vh] px-[6vw] md:px-[7vw]">
-    <ul class="cnt text-2xl flex-col font-mono text-white tracking-wider">
-    <li class=""><a href="">Bags</a></li>
+    <ul class="cnt text-[16px] flex-col font-mono text-white tracking-wider">
+    <li class="mt-6"><a href="">Bags</a></li>
     <li class=""><a href="">Jewellery</a></li>
     <li class=""><a href="">Gifts</a></li>
     <li class=""><a href="">Watch</a></li>
@@ -89,11 +90,11 @@
   </ul>
 </nav>
 
-<!-- ------------------ -->
+<!-- main content -->
 
   <main class="main">
-    <section class="hero cnt" id="hero">
-      <div class="inner-cnt center flex  items-end">
+    <section class="hero h-[100dvh] md:h-[100%] cnt" id="hero">
+      <div class="inner-cnt center flex items-end">
         <!-- <div class="play">Play</div> -->
         <div class="hero-btn gap-4 flex justify-center block lg:hidden">
           <button class="sign-in">sign in</button>
@@ -102,21 +103,19 @@
       </div>
     </section>
 
-    <section class="lv-slider overflow-hidden">
+    <section id="lv-slider" class="lv-slider overflow-hidden">
       <h1 class="flex font-semibold">Louis<img
           src="https://media2.giphy.com/media/3NxfYtkGvPFXFgPGLw/source.gif">Vuitton</h1>
     </section>
-    <section class="headline cnt">
+    <section class="headline md:mb-20 cnt">
 
       <h1 class="allura-regular text-xl  lg:text-4xl text-center">Explore a Selection of the Maison's Creations... </h1>
 
     </section>
-    <section class="show-perfume cnt ">
-      <!-- <img src="" > -->
-      <img
-        src="https://images.squarespace-cdn.com/content/v1/529fc0c0e4b088b079c3fb6d/1560443326341-I1UDFK86989MYGWALNDO/ke17ZwdGBToddI8pDm48kJVUBuonXcN8tIrpimRw84oUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc2oaEyd4rzD7GceB2XZPA-6lW8v30YJkHP0sHU35xwqxmPTL14xPtkcLB6U3A_pKE/_U8A0760-Pano.jpg"
-        class="scaleup ">
-      <!-- <img src="" > -->
+
+    <section class="show-perfume cnt overflow-hidden ">
+      <img src="https://media.admagazine.com/photos/6377a94e5f4c790d1bd71e46/16:9/w_2560%2Cc_limit/GettyImages-1235763093.jpg"
+       class="scaleup " >
     </section>
 
     <section class="show-bags">
@@ -124,7 +123,7 @@
       <div class="bag-show-2"></div>
     </section>
 
-    <section class="show-bags-2 hidden">
+    <section class="show-bags-2">
       <div class="bag-show-1"></div>
       <div class="bag-show-2"></div>
     </section>
@@ -143,9 +142,18 @@
       </div>
     </section>
 
+    
+
     <section class="show-bags-3">
       <div class="bag-show-1"></div>
       <div class="bag-show-2"></div>
+    </section>
+
+    
+    <section class="headline cnt">
+
+      <h1 class="allura-regular text-xl  lg:text-4xl text-center">Something For Everyday </h1>
+
     </section>
 
     <section class="text-[#999999] body-font">
@@ -266,8 +274,8 @@
       </div>
     </section>
 
-    <section class="store">
-
+    <section class="store ">
+      
     </section>
     
 
@@ -378,6 +386,8 @@
       </div>
     </div>
   </footer>
+      <!-- Lenis smooth scroll -->
+      <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
   <!-- GSAP CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -386,7 +396,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
   <script src="script.js"></script>
 </body>
 

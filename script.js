@@ -1,15 +1,34 @@
 // -------------------
-const signIn = document.querySelector('.sign-in');
+const signIn = document.querySelectorAll('.sign-in');
 const x = document.querySelector('.x');
 var formm = document.querySelector('.formm')
+
+console.log(signIn);
+
+
+// lenis smooth code 
+
+// Initialize Lenis
+const lenis = new Lenis({
+    autoRaf: true,
+  });
+  
+  // Listen for the scroll event and log the event data
+  lenis.on('scroll', (e) => {
+    console.log(e);
+  });
 
 // FORM sing Or Out -------------
 function singOrOut(params) {
     // form open -----------------
-signIn.addEventListener('click', () => {
-    console.log('click');
-    formm.style.display = "block"
+signIn.forEach( (s,i) => {
+    s.addEventListener('click', () => {
+        // console.log('click');
+        formm.style.display = "block"
+    })
 })
+
+
 // form close-----------------
 x.addEventListener('click', () => {
     formm.style.display = "none"
@@ -35,6 +54,7 @@ navEnd.addEventListener('click', () =>{
         on = 1;
     }
 })
+
 
 
 // -----------------------------------
@@ -88,7 +108,7 @@ gsap.from( '.headline h1',{
     scrollTrigger:{
         trigger:'.headline h1',
         scroller:'body',
-        // markers:true,
+        // markers:true,    
         start:'top 85%',
         // end:'top 100%',
         // scrub:2
@@ -196,8 +216,8 @@ gsap.from('.show-bags-3 .bag-show-1',{
         trigger:'.show-bags-3 .bag-show-1',
         scroller:'body',
         // markers:true,
-        start:'top 80%',
-        end:'top 100',
+        start:'top 90%',
+        end:'top 50%',
         scrub:2,
 
     }
@@ -212,8 +232,8 @@ gsap.from('.show-bags-3 .bag-show-2',{
         trigger:'.show-bags-3 .bag-show-1',
         scroller:'body',
         // markers:true,
-        start:'top 80%',
-        end:'top 100',
+        start:'top 90%',
+        end:'top 50%',
         scrub:2,
         
     }

@@ -42,20 +42,21 @@ html,body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    z-index:9;
+    height: 100dvh;
+    z-index:90;
     position: fixed;
     display: none;
-    background-image: url(https://i1.sndcdn.com/artworks-aA2EiSamHViEzhmt-AGRteQ-t500x500.jpg);
+    background-image: url();
+    background: #000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .wrapper {
-  width: 400px;
+  max-width: 500px;
   border-radius: 1rem;
-  padding: 30px;
+  padding: 5px;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8px);
@@ -63,18 +64,16 @@ html,body{
   z-index: 15;
   position: absolute;
   backdrop-filter: brightness(30%);
-  top: 20%;
-  left:35%;
-
-  
-
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 form {
   display: flex;
   flex-direction: column;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 4vw;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -94,7 +93,7 @@ h2 {
   transition: 0.15s ease;
 }
 .input-field input {
-  width: 100%;
+  min-width: 100%;
   height: 40px;
   background: transparent;
   border: none;
@@ -173,7 +172,8 @@ body::-webkit-scrollbar{
     position: fixed;
     top: 1.8rem;
     font-size: large;
-    z-index: 9;    
+    z-index: 9;  
+    /* mix-blend-mode: difference;   */
 }
 .inner-nav{
     display: flex;
@@ -270,8 +270,8 @@ button:hover{
 /* hero section */
 
 .hero{
-    min-height: 100%;
     width: 100vw;
+    height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,15 +283,16 @@ button:hover{
     padding-top: 7rem;
 }
 .hero .inner-cnt{
-    /* background-image: url(https://cdn.vectorstock.com/i/preview-1x/01/19/liquid-chromatic-holographic-texture-wrinkled-vector-38140119.jpg); */
+    /* background-image: url(https://images.unsplash.com/photo-1602206475572-be526e184555?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
     background-image: url(https://storage.googleapis.com/buro-malaysia-storage/www.buro247.my/2024/03/095c6c8c-01b-full-width-lv-the-place-bangkok.jpg);
-    /* background-image: url(https://ny-media.nuyou.com.sg/2021/07/Webp.net-gifmaker-29.gif); */
+    background-image: url(https://images.unsplash.com/photo-1602939971798-b0ac641fba87?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    /* background-image: url(https://vmagazine.com/wp-content/uploads/2023/01/1.jpg);    */
     background-color: var(--brand-gray-col);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     width: 97vw;
-    height: 105vh;
+    height: 95vh;
     border-radius: 2rem;  
     padding-bottom: 2rem;
     position: relative;
@@ -379,12 +380,12 @@ button:hover{
 
 /* store */
 .store{
-    height: 120vh;
+    height: 100vh;
     width: 100vw;
-    background-image: url(https://th.bing.com/th/id/R.5f91b583b84d94a5d26bffa79269285c?rik=EXVCIqEc4PdN%2fQ&riu=http%3a%2f%2fwww.crash.fr%2fwp-content%2fuploads%2f2016%2f08%2fLe-Bon-March%c3%a9-Rive-Gauche-Paris.jpg&ehk=cnJU0%2b2TrTlcDTlXz8PkiwHJXqSpB05AhpCMXQMjFIc%3d&risl=&pid=ImgRaw&r=0);
+    background-image: url('https://i.pinimg.com/1200x/07/eb/ef/07ebef492a0fbdab0663e9c3a5b48152.jpg');
     background-position: center;
+    /* background-size: cover; */
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* show-bags section */
@@ -497,10 +498,11 @@ button:hover{
 /* ----------------------------------------------- */
 
 
-@media (width <= 768px) {
+@media (width <= 1024px) {
 
 /* start nav here */
 .nav-cantainer{
+    
     width: 100%;
     height: 8vh;
     position: fixed;
@@ -565,7 +567,8 @@ button:hover{
     width: 97vw;
     height: 90vh;
     border-radius: 1.5rem;
-    background-image: url(https://66.media.tumblr.com/637dd75b9cce055b671ba7f0d4522923/tumblr_n09v8bR0021qffcrao1_500.gifv);
+    background-image: url(https://vmagazine.com/wp-content/uploads/2023/01/1.jpg);
+    background-size: cover;
     background-position: center;
     /* filter: brightness(30%) ; */
 }
@@ -574,6 +577,7 @@ button:hover{
 
 .lv-slider{
     display: none;
+    overflow: hidden;
 }
 
 /* ----- */
@@ -583,8 +587,7 @@ button:hover{
     transform: translateY(10vh);
 }
 
-.show-perfume{
-    /* display: none; */
+.show-perfume{  
     margin: 0;
     /* height: 60vh; */
 }
@@ -593,7 +596,7 @@ button:hover{
 
 .show-bags{
     height: 20%;
-    flex-direction: column;
+    flex-direction: row;
     gap: 4rem;
     /* background-color: brown; */
 }
@@ -602,9 +605,8 @@ button:hover{
     width: 250px;
 }
 .show-bags-2{
-    display: none;
     height: 50%;
-    margin: 1rem 0px;
+    margin: 5rem 0px;
     
 }
 .show-bags-2 div{
@@ -615,7 +617,7 @@ button:hover{
     /* display: none; */
     height: 50%;
     margin: 4rem 0px;
-    flex-direction: column;
+    flex-direction: row;
     gap: 4rem;
 }
 .show-bags-3 div{
@@ -625,12 +627,162 @@ button:hover{
 
 /* ---------- */
 
-.store{
-    display: none;
+
 }
 
+/* ------------------- */
 
+@media (width < 768px) {
 
+    .hero .inner-cnt{
+        height: 90dvh;
+    }
+
+    .show-bags{
+        height: 20%;
+        flex-direction: column;
+        gap: 4rem;
+        /* background-color: brown; */
+    }
+    .show-bags-2{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    
+    .headline{
+        height: 10vh;
+        transform: translateY(15vh);
+        display: block;
+        height: 14vh;
+    }
+}
+
+.store{
+    /* display: none; */
+    margin-top: 20px;
 }
 
 /* ----------------- */
+
+@media (width <= 500px) {
+
+    
+    .wrapper {
+      max-width: 500px;
+      min-width: 200px;
+      border: none;
+      padding: 5px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px); 
+      z-index: 15;
+      position: absolute;
+      backdrop-filter: brightness(30%);
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+    h2 {
+      display: none;
+    }
+    .input-field {
+      position: relative;
+      border-bottom: 2px solid #ccc;
+      margin: 15px 0;
+    }
+    .input-field label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-50%, -5);
+      color: #fff;
+      font-size: 16px;
+      pointer-events: none;
+      transition: 0.15s ease;
+    }
+    .input-field input {
+      min-width: 100%;
+      height: 40px;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      color: #fff;
+    }
+    .input-field input:focus~label,
+    .input-field input:valid~label {
+      font-size: 0.8rem;
+      top: 10px;
+      transform: translateY(-120%);
+    }
+    .forget {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 25px 0 35px 0;
+      color: #fff;
+      font-size: 10px;
+    }
+    #remember {
+      accent-color: #fff;
+    }
+    .forget label {
+      display: flex;
+      align-items: center;
+    }
+    .forget label p {
+      margin-left: 8px;
+    }
+    .wrapper a {
+      color: #efefef;
+      text-decoration: none;
+    }
+    .wrapper a:hover {
+      text-decoration: underline;
+    }
+    button {
+      background: var(--brand-bg-col);
+      color: #000;
+      font-weight: 600;
+      border: none;
+      padding: 2px 2px;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 16px;
+      border: 2px solid transparent;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      color: #fff;
+      border-color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+    }
+    .register {
+      text-align: center;
+      margin-top: 16px;
+      color: #fff;
+    }
+
+    
+/* start nav here */
+nav-cantainer{
+    width: 320px;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    font-size:small;
+      
+}
+
+.store{
+    /* display: none; */
+}
+
+/* lv-slider sectiom  */
+
+#lv-slider{
+    display: none;
+}
+
+}
