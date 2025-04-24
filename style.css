@@ -284,9 +284,8 @@ button:hover{
 }
 .hero .inner-cnt{
     /* background-image: url(https://images.unsplash.com/photo-1602206475572-be526e184555?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
-    background-image: url(https://storage.googleapis.com/buro-malaysia-storage/www.buro247.my/2024/03/095c6c8c-01b-full-width-lv-the-place-bangkok.jpg);
-    background-image: url(https://images.unsplash.com/photo-1602939971798-b0ac641fba87?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    /* background-image: url(https://vmagazine.com/wp-content/uploads/2023/01/1.jpg);    */
+    /* background-image: url(https://storage.googleapis.com/buro-malaysia-storage/www.buro247.my/2024/03/095c6c8c-01b-full-width-lv-the-place-bangkok.jpg); */
+    background-image: url(https://images.unsplash.com/photo-1602939971798-b0ac641fba87?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
     background-color: var(--brand-gray-col);
     background-repeat: no-repeat;
     background-size: cover;
@@ -296,6 +295,10 @@ button:hover{
     border-radius: 2rem;  
     padding-bottom: 2rem;
     position: relative;
+}
+
+.inner-cnt video{
+    display: none;
 }
 
 .hero-btn{
@@ -490,7 +493,7 @@ button:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+    }
 .show-perfume img{
     height: 60%;
 }
@@ -565,12 +568,9 @@ button:hover{
 }
 .hero .inner-cnt{
     width: 97vw;
-    height: 90vh;
+    height: 90vh;    
     border-radius: 1.5rem;
-    background-image: url(https://vmagazine.com/wp-content/uploads/2023/01/1.jpg);
-    background-size: cover;
-    background-position: center;
-    /* filter: brightness(30%) ; */
+   
 }
     
 /* lv-slider sectiom  */
@@ -635,7 +635,7 @@ button:hover{
 @media (width < 768px) {
 
     .hero .inner-cnt{
-        height: 90dvh;
+        height: 90vh;
     }
 
     .show-bags{
@@ -663,9 +663,20 @@ button:hover{
     margin-top: 20px;
 }
 
+
+
 /* ----------------- */
 
 @media (width <= 500px) {
+
+    .hero .inner-cnt{
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    .inner-cnt video{
+        display: block;
+    }
 
     
     .wrapper {
